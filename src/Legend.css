@@ -1,0 +1,39 @@
+.body {
+  max-height: 150px;
+  overflow-y: auto;
+  scrollbar-gutter: stable both-edges;
+  scrollbar-width: thin;
+  scrollbar-color: #c9d1df #f5f7fa;
+}
+
+.col {
+  padding: 2px;
+  font-size: 0.75rem;
+}
+
+.category {
+  width: 60%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.num {
+  width: 20%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+  padding-right: 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row:hover {
+  background-color: #efefef;
+  border-radius: 4px;
+  cursor: pointer;
+}

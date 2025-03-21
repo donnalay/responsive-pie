@@ -97,10 +97,3 @@
   }
 }
 
-@container legend-container (max-width: 150px) {
-
-  .wrapper {
-    display: none;
-  }
-}
-

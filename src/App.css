@@ -69,7 +69,7 @@ html {
   flex: 1;
   max-height: 100%;
   border: 1px solid #dee3ec;
-  border-radius: 8px;
+  border-radius: 0.25rem;
   padding: 1rem;
   box-sizing: border-box;
   background-color: #ffffff;

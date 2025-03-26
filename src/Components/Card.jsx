@@ -56,7 +56,7 @@ export default function Card({ element, columns, height }) {
           </button>
         </div>
       </div>
-      <p>COUNT 355,367 events in 8 / 85 categories</p>
+      <p className="Title">COUNT 355,367 events in 8 / 85 categories</p>
       {element}
     </div>
   );

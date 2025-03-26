@@ -1,5 +1,6 @@
-import "./App.css";
 import "./Legend.css";
+import "../../App.css";
+
 import LegendRow from "./LegendRow";
 import { v4 as uuidv4 } from "uuid";
 

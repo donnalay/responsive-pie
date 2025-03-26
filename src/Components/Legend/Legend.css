@@ -1,9 +1,10 @@
 .wrapper {
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  min-width: 136px;
-  max-width: 500px;
+  min-width: 116px;
+  max-width: 600px;
   border-bottom: 1px solid #efefef;
   container-type: inline-size;
   container-name: legend-container;
@@ -16,10 +17,10 @@
 }
 
 .category {
- width:60%;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
+  flex: 3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .legend-color {
@@ -30,13 +31,13 @@
 }
 
 .num {
-  width: 20%;
+  flex: 1;
   white-space: nowrap;
   text-align: right;
-  padding-right: 16px;
 }
 
 .header {
+  height: auto;
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #efefef;
@@ -47,18 +48,16 @@
 }
 
 .body {
-  height: auto;
-  max-height: 160px;
+  height: 132px;
   overflow-y: auto;
   scrollbar-gutter: stable both-edges;
   scrollbar-width: thin;
   scrollbar-color: #c9d1df #f5f7fa;
-
 }
 
 .row {
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .row:hover {
@@ -67,33 +66,54 @@
   cursor: pointer;
 }
 
-.body > .row:nth-child(1){
-  margin-top: 0.25rem; 
+.body > .row:nth-child(1) {
+  margin-top: 0.25rem;
 }
 .body > .row:last-child {
   margin-bottom: 0.25rem;
 }
 
-
 @container legend-container (max-width: 250px) {
-  .header>.col.num {
+  .header > .col.num:last-of-type {
     display: none;
   }
-  .body>.row>.col.num {
+
+  .body > .row > .col.num:last-of-type {
     display: none;
   }
 
   .category {
-    width: auto;
+    width: 60%;
     font-size: 0.75rem;
-    padding: 0.0625rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-   }
+  }
 
   .body {
+    height: 88px;
+  }
+
+  .wrapper {
+    max-width: 100%;
     width: 100%;
   }
 }
 
+@container legend-container (max-width: 180px) {
+  .header > .col.num {
+    display: none;
+  }
+  .body > .row > .col.num {
+    display: none;
+  }
+
+  .category {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .col {
+    margin-right: 0;
+  }
+}

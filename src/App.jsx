@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-import Default from "./Pages/Default";
+import ExampleOne from "./Pages/ExampleOne";
+import ExampleTwo from "./Pages/ExampleTwo";
 import Report from "./Pages/Report";
 import Nav from "./Components/Nav";
 
@@ -8,9 +9,10 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<Report />} />
+        <Route path="/responsive-pie" element={<Report />} />
         <Route path="/report" element={<Report />} />
-        <Route path="/default" element={<Default />} />
+        <Route path="/example-1" element={<ExampleOne />} />
+        <Route path="/example-2" element={<ExampleTwo />} />
       </Routes>
     </>
   );

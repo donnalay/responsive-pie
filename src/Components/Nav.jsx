@@ -17,7 +17,10 @@ export default function Nav() {
             <Link to="/Report">Boards Example</Link>
           </li>
           <li>
-            <Link to="/Default">Default: 3/12 Col, Height-1</Link>
+            <Link to="/Example-1">Example: 3/12 Col, Height-1</Link>
+          </li>
+          <li>
+            <Link to="/Example-2">Example: 3/12 Col, Height-2</Link>
           </li>
         </ul>
       </nav>

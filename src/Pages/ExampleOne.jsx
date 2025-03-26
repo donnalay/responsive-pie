@@ -3,7 +3,7 @@ import "../App.css";
 import Card from "../Components/Card";
 import ChartElements from "../Components/ChartElements";
 
-export default function Default() {
+export default function ExampleOne() {
   return (
     <div style={{ margin: "1rem" }}>
       <div style={{ margin: "1rem 0" }}>
@@ -11,11 +11,7 @@ export default function Default() {
       </div>
 
       <Card element={<ChartElements />} columns={"col-3"} height={"height-1"} />
-      <div style={{ margin: "1rem 0" }}>
-        <h2>Width: 3/12 Columns (Default), Height: 570px</h2>
-      </div>
-      <Card element={<ChartElements />} columns={"col-3"} height={"height-2"} />
-
+      
       <div style={{ display: "flex", gap: "20px" }}>
         <div
           style={{
@@ -25,8 +21,6 @@ export default function Default() {
             border: "1px solid #ddd",
             borderRadius: "8px",
             backgroundColor: "#f9f9f9",
-            maxHeight: "264px",
-            overflowY: "scroll",
           }}
         >
           <h2>Legend Behaviour</h2>
@@ -102,8 +96,6 @@ export default function Default() {
             border: "1px solid #ddd",
             borderRadius: "8px",
             backgroundColor: "#f9f9f9",
-            maxHeight: "264px",
-            overflowY: "scroll",
           }}
         >
           <h2>Card Responsive Behaviour</h2>

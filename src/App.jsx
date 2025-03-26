@@ -8,6 +8,7 @@ function App() {
     <>
       <Nav />
       <Routes>
+        <Route path="/" element={<Report />} />
         <Route path="/report" element={<Report />} />
         <Route path="/default" element={<Default />} />
       </Routes>
